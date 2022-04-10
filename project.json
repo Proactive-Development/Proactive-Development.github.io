@@ -1,0 +1,14 @@
+{
+    "name": "Proactive-Development.github.io",
+    "description": "Proactive-Development.github.io website",
+    "version": "0.1.0",
+    "main_file": "index.html",
+    "author": "Proactive Development",
+    "license": "none",
+    "url": "proactive-dev.xyz",
+    "email": "none",
+    "languages": [
+        "html"
+    ],
+    "actions": {}
+}
