@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="top-container">
+            <div>
+                <h1>Welcome To Proactive Development</h1>
+                <p>A community run github organisation that is building software for the world!</p>
+            </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/Proactive/logo.png" width="150px" style="border-radius: 30px;" class="logo" id="logo" onmouseover="glitch_logo()" onmouseleave="glitch_logo_back()">
+            </div>
+        </div>
+        <br>
+        <div class="section_1">
+            <h2>What is Proactive Development?</h2>
+            <p>At Proactive Development our software is 100% Open Source, Free and Community Run. Want to be part of the discord and hang out with other developers? Just come and join our discord!</p>
+        </div>
+        <h2 style="text-align: center;">Some projects that we have made</h2>
+        <br>
+        <div class="app_container">
+            <div class="app">
+                <img src="https://github.com/Proactive-Development/Logos/blob/main/hash-util/hash-util.png?raw=true">
+                <h3>Hash Util</h3>
+                <br>
+                <button onclick="window.location.href = 'https://github.com/Proactive-Development/hash-util'">Github Repo</button>
+            </div>
+            <div class="app">
+                <img src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/CaesarPlus/CaesarPlus.png">
+                <h3>CaesarPlus</h3>
+                <br>
+                <button onclick="window.location.href = 'https://github.com/Proactive-Development/CaesarPlus'">Github Repo</button>
+            </div>
+            <div class="app">
+                <img src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/RPI-GPIO/RPI-GPIO%20Logo.png">
+                <h3>RPi-GPIO</h3>
+                <br>
+                <button onclick="window.location.href = 'https://github.com/Proactive-Development/RPi-GPIO-WebRemote'">Github Repo</button>
+            </div>
+        </div>
+        <br>
+        <div class="center_button">
+            <button style="padding: 10px 100px;">See all</button>
+        </div>
+        <br>
+        <br>
+        <div class="section_1">
+            <h2><i class="bi bi-code-slash"></i> All of our code is free and open source <sup>*</sup></h2>
+            <p>Why not check out our github organisation you can also ask to join the organisation from the discord server</p>
+            <button onclick="window.location.href = 'https://github.com/Proactive-Development'"><i class="bi bi-github"></i> Go to github organisation</button>
+            <p style="font-size: x-small;color: gray;">* This organisation dose have some closed source software everything on the <strong>github organisation</strong> is free and open source</p>
+        </div>
+        <br>
+        <div class="section_1">
+            <h2><i class="bi bi-megaphone-fill"></i> Want to be part of the discord?</h2>
+            <p>Join our discord server and get to know other developers and get to know the organisation. Also get news from out announcements channel</p>
+            <button  onclick="window.location.href = 'https://discord.gg/rBrDnQxBsM'"><i class="bi bi-discord"></i> Join Discord Server</button>
+        </div>
+        <br>
+        <h2 style="text-align: center;">Meet the creators of Proactive Development</h2>
+        <div class="section_2">
+            <img src="https://cdn.discordapp.com/avatars/707318818090778745/a_577755384019f7266909a5bb37475b2d.gif?size=512">
+            <h2>awesomelewis2007</h2>
+            <br>
+        </div>
+        <br>
+        <div class="section_2">
+            <img src="https://cdn.discordapp.com/avatars/696449014308274346/a_668696831ab2b94d1221fafdf76cc6a6.gif?size=512">
+            <h2>Wolfieboy</h2>
+            <br>
+        </div>
+        <br>
+        <h2 style="text-align: center;">Some of our apps at work</h2>
+        <br>
+        <div class="section_1">
+            <img src="https://github.com/Proactive-Development/Logos/blob/main/hash-util/hash-util.png?raw=true">
+            <h2>Hash Util</h2>
+            <p>Work with file hashes easier than ever</p>
+        </div>
+        <br>
+        <div class="code-block">
+            <p>Super easy install</p>
+            <code>curl -fsSL https://raw.githubusercontent.com/Proactive-Development/hash-util/main/scripts/install.sh | bash -</code>
+            <hr>
+            <p>See all the hashes of your files</p>
+            <code><span style="color: rgb(0, 221, 0);">user@computer:~#</span> hash-util -ls</code>
+            <br>
+            <code>File: README.md
+
+            MD5:e2cf67ded752eaeec784e62fbf76d5c6
+            <br>
+            SHA224:7782b31e5c33ca07fde01662c63657547806faaecbadf2196035dbf2
+            <br>
+            SHA256:7ec39b57403ff41f418b00cbfc117067e5d54c6ba389bb210c993099cc9c958f
+            <br>
+            SHA384:fe393e9e66e9eb177172170aa957751136e152212a6cee64cb2c5e8c9ec032c8cad575cdb294b39ec55597db2b6e1386</code>
+            <hr>
+            <p>Find files with hashes</p>
+            <code><span style="color: rgb(0, 221, 0);">user@computer:~#</span> hash-util -f 6c4e0639985cc7dcc7c11d385b341e3fs</code>
+            <br>
+            <code>['/hash-util/README.md']</code>
+            <hr>
+            <p>Verify files with ease</p>
+            <code><span style="color: rgb(0, 221, 0);">user@computer:~#</span> hash-util -v README.md 6c4e0639985cc7dcc7c11d385b341e3f</code>
+            <br>
+            <code>[PASS] File has the same hash as the given hash: 6c4e0639985cc7dcc7c11d385b341e3f</code>
+        </div>
+        <br>
+        <div class="section_1">
+            <img src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/CaesarPlus/CaesarPlus.png">
+            <h2>CaesarPlus</h2>
+            <p>An advanced caesar cypher python module</p>
+        </div>
+        <br>
+        <div class="code-block">
+            <p>Quick install with pip</p>
+            <code>pip install caesarplus</code>
+            <hr>
+            <p>Encrypt any text</p>
+            <code>caesarplus.<span style="color: orange;">encode</span>(<span style="color: lightblue;">"Example"</span>)</code>
+            <br>
+            <code>(<span style="color: lightgreen;">[4, 4, 1, 7, 5, 0, 6]</span>,<span style="color: lightblue;">'I|btulk'<span>)</code>
+            <hr>
+            <p>Decrypt any text with the key and encrypted text</p>
+            <code>caesarplus.<span style="color: orange;">decode</span>(<span style="color: lightgreen;">[4, 4, 1, 7, 5, 0, 6]</span>,<span style="color: lightblue;">'I|btulk'<span>)</code>
+            <br>
+            <code><span style="color: lightblue;">"Example"</span></code>
+        </div>
+        <br>
+        <div class="section_1">
+            <img src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/RPI-GPIO/RPI-GPIO%20Logo.png">
+            <h2>RPi-GPIO</h2>
+            <p>Control your raspberry pi gpio pins from your browser</p>
+        </div>
+        <br>
+        <div class="code-block">
+            <img src="https://github.com/Proactive-Development/RPi-GPIO-WebRemote/raw/main/demo.png" width="100%">
+        </div>
+        <script>
+            function glitch_logo(){
+                var logo = document.getElementById("logo");
+                logo.src = "https://cdn.discordapp.com/attachments/908748835541643304/964484444276809779/logo_glitch.gif";
+            }
+            function glitch_logo_back(){
+                var logo = document.getElementById("logo");
+                logo.src = "https://raw.githubusercontent.com/Proactive-Development/Logos/main/Proactive/logo.png";
+            }
+        </script>
+    </body>
+</html>
