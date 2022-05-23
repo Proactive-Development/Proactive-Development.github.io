@@ -1,187 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proactive Development</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Proactive Development</a>
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
-      <!-- <span class="navbar-toggler-icon"></span> -->
-      <!-- </button> -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://proactive-development.github.io/assets/css/style.css">
+        <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="top-container">
+            <div>
+                <h1>Welcome To Proactive Development</h1>
+                <h2>Creating software, stopping Malware.</h2>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-      </div>
-    </nav>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>Our Software</h1>
-          </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/Proactive/logo.png" width="150px" style="border-radius: 30px;" class="logo" id="logo" onmouseover="glitch_logo()" onmouseleave="glitch_logo_back()">
+            </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container mt-2">
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/RPI-GPIO/RPI-GPIO%20Logo.png" width="60px" style="border-radius: 10px;" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">RPi-GPIO WebRemote</h5>
-                  Control your raspberry pi GPIO pins form your bowser
-                </div>
-              </li>
-              <br>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <p><a class="btn btn-primary btn-sm" href="https://github.com/Proactive-Development/RPi-GPIO-WebRemote" role="button">Go to Repository</a></p>
-              </div>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="https://github.com/Proactive-Development/Logos/blob/main/Pstat/pstat%20logo.png?raw=true" width="60px" style="border-radius: 10px;" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">JSONreg</h5>
-                  Create, Manage and Read JSONreg files in python. JSONreg comes with lots of features like searching data, filtering and more. 
-                </div>
-              </li>
-              <br>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <p><a class="btn btn-primary btn-sm" href="https://github.com/Proactive-Development/jsonreg" role="button">Go to Repository</a></p>
-              </div>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="https://img.icons8.com/fluency/96/key-security.png" width="50px" style="border-radius: 10px;" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">PyKeyGen</h5>
-                  Generate random keys with the settings you chose.  
-                </div>
-              </li>
-              <br>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <p><a class="btn btn-primary btn-sm" href="https://github.com/Proactive-Development/RPi-GPIO-WebRemote" role="button">Go to Repository</a></p>
-              </div>
-            </ul>
-          </div>
+        <br>
+        <br>
+        <br>
+        <div class="section_1">
+            <h2>What is Proactive Development?</h2>
+            <p>At Proactive Development we make software to help people. Utilities, System Tools, Software packages and more. We also research into malware and threats and help stop malware.</p>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container mt-2">
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/CaesarPlus/CaesarPlus.png" width="60px" style="border-radius: 10px;" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">CaesarPlus</h5>
-                  An advanced caesar cypher python module
-                </div>
-              </li>
-              <br>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <p><a class="btn btn-primary btn-sm" href="https://github.com/Proactive-Development/CaesarPlus" role="button">Go to Repository</a></p>
-              </div>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/CaesarPlus/CaesarPlusJS.png" width="60px" style="border-radius: 10px;" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">CaesarPlusJS <span class="badge bg-warning ">New</span></h5>
-                  An advanced caesar cypher for vanilla JavaScript and Node.js
-                </div>
-              </li>
-              <br>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <p><a class="btn btn-primary btn-sm" href="https://github.com/Proactive-Development/CaesarPlus-JS" role="button">Go to Repository</a></p>
-              </div>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/hash-util/hash-util.png" width="60px" style="border-radius: 10px;" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Hash-Util <span class="badge bg-warning ">New</span></h5>
-                  Work with file hashes easier than ever  
-                </div>
-              </li>
-              <br>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <p><a class="btn btn-primary btn-sm" href="https://github.com/Proactive-Development/hash-util" role="button">Go to Repository</a></p>
-              </div>
-            </ul>
-          </div>
+        <br>
+        <div class="section_1">
+            <h2><i class="bi bi-code-slash"></i> Our public code is free and open source <sup>*</sup></h2>
+            <p>Why not check out our github organisation you can also ask to join the organisation from the discord server</p>
+            <button onclick="window.location.href = 'https://github.com/Proactive-Development'"><i class="bi bi-github"></i> Go To Github Organisation</button>
+            <p style="font-size: x-small;color: gray;">* This organisation dose have some closed source software everything on the <strong>github organisation and marked open source</strong> is free and open source</p>
         </div>
-      </div>
-    </section>
-
-    <hr>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1><i class="bi bi-github"></i> All on github</h1>
-            <p>All our software is safely stored on our github organisation.</p>
-            <p><a class="btn btn-primary btn" href="https://discord.gg/rBrDnQxBsM" role="button">Join Discord Server</a></p>
-          </div>
+        <br>
+        <div class="section_1">
+            <h2><i class="bi bi-megaphone-fill"></i> Want to be part of the discord?</h2>
+            <p>Join our discord server and get to know other developers and get to know the organisation. Also get news from out announcements channel</p>
+            <button  onclick="window.location.href = 'https://discord.gg/rBrDnQxBsM'"><i class="bi bi-discord"></i> Join Discord Server</button>
         </div>
-      </div>
-    </section>
-    <hr>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Proactive Development 2022.</p>
-            <p>Some icons on this page are by <a class="link" href="https://icons8.com" role="button">Icons8<a></p>
-          </div>
+        <br>
+        <h2 style="text-align: center;">Meet the founders of Proactive Development</h2>
+        <div class="section_2">
+            <img src="https://cdn.discordapp.com/avatars/707318818090778745/a_577755384019f7266909a5bb37475b2d.gif?size=512">
+            <h2>awesomelewis2007</h2>
+            <br>
         </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-  </body>
+        <br>
+        <div class="section_2">
+            <img src="https://cdn.discordapp.com/avatars/696449014308274346/a_668696831ab2b94d1221fafdf76cc6a6.gif?size=512">
+            <h2>Wolfieboy</h2>
+            <br>
+        </div>
+        <br>
+        <h2 style="text-align: center;">Stopping malware with open source software</h2>
+        <br>
+        <div class="section_1">
+            <h2><i class="bi bi-bug-fill"></i> Check out our malware watcher</h2>
+            <p>This website uses reports from proactive development to point out new threats </p>
+            <button  onclick="window.location.href = 'https://proactive-development.github.io/Malware-Watch/'"><i class="bi bi-globe2"></i> Malware Watch Website</button>
+            <button  onclick="window.location.href = 'https://github.com/Proactive-Development/Malware-Watch/issues?q=is%3Aissue+is%3Aopen+label%3AMalware+'"><i class="bi bi-github"></i> Malware Watch Reports</button>
+        </div>
+        <br>
+        <div class="section_1">
+            <h2><i class="bi bi-bug-fill"></i> YARA Rules</h2>
+            <p>Check out our YARA rules </p>
+            <button  onclick="window.location.href = 'https://github.com/Proactive-Development/YARA'"><i class="bi bi-github"></i> YARA Rules Github</button>
+        </div>
+        <br>
+        <h2 style="text-align: center;">Check out all our software</h2>
+        <div class="section_1" style="background: none;">
+            <button  onclick="window.location.href = 'https://github.com/orgs/Proactive-Development/repositories'" style="width: 100%;"><i class="bi bi-github"></i> See All Public Repositories</button>
+        </div>
+        <br>
+        <script>
+            function glitch_logo(){
+                var logo = document.getElementById("logo");
+                logo.src = "https://cdn.discordapp.com/attachments/908748835541643304/964484444276809779/logo_glitch.gif";
+            }
+            function glitch_logo_back(){
+                var logo = document.getElementById("logo");
+                logo.src = "https://raw.githubusercontent.com/Proactive-Development/Logos/main/Proactive/logo.png";
+            }
+        </script>
+    </body>
 </html>
